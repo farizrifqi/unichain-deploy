@@ -43,7 +43,7 @@ export default function EthereumContextProvider({ children }) {
             setLoadingMessage("Preparing tx")
             const provider = new ethers.BrowserProvider(window.ethereum);
             const signer = await provider.getSigner(account);
-            const contract = new ethers.Contract("0xfe16ee9A6Bb4d3a293FD29d04d70D03751aF9de6", [
+            const contract = new ethers.Contract("0xd261F3D22275Becb7052ff7f857f8D739Fe846d8", [
                 {
                     "inputs": [
                         {
